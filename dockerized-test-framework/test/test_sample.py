@@ -1,2 +1,10 @@
-def test_addition():
-    assert 2 + 2 == 5
+import pytest
+
+@pytest.mark.smoke
+def test_login():
+    assert True
+
+
+@pytest.mark.regression
+def test_payment():
+    assert True
