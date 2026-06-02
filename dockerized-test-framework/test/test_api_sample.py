@@ -15,7 +15,8 @@ def test_get_users():
 def test_get_single_user():
 
     response = requests.get(f"{BASE_URL}/users/1")
-
+    print(response.json())
+    
     assert response.status_code == 200
     assert response.json()["id"] == 1
 
